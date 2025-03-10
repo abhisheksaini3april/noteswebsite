@@ -100,7 +100,109 @@ Some of the most popular JS engines today are :
 
 4 : Chakra - Developed by Microsoft, Chakra was the JavaScript engine used in the Edge web browser. It has now been replaced by the Chromium-based Edge browser, which uses V8 as its JavaScript engine.
 </p>`,
-letvar:`<p>this content will be updated shortly</p>`
+letvar:`    <h2>Let, Var & Const</h2>
+    <p>Variable declaration is one of the easiest tasks in every programming language. However, when it comes to JavaScript, it can become a bit tricky due to the special features of the language. But don't worry, we've got you covered.</p>
+    
+    <h3>Did you know?</h3>
+    <p><strong>let</strong> & <strong>const</strong> were introduced in 2015 as new features of JavaScript. Before that, <strong>var</strong> was the only way to declare a variable.</p>
+    
+    <h2>What is ECMAScript?</h2>
+    <p>Have you ever heard someone referring to JavaScript as ES6 or ES7 and felt confused about it?</p>
+    <p>Let me introduce you to another name for JavaScript, i.e., <strong>ECMAScript</strong>. Yes, you heard it right—the official name of JavaScript is ECMAScript.</p>
+    
+    <h3>JavaScript Versioning</h3>
+    <p>JavaScript was created more than 25 years ago, and since then, it has undergone significant evolution. Numerous new features and syntax have been added over the years. ES6 (ECMAScript 2015) introduced major changes that modernized JavaScript.</p>
+    
+    <h2>Understanding <code>var</code></h2>
+    <p>The <code>var</code> keyword was the traditional way of declaring variables in JavaScript. It is function-scoped or globally-scoped, but not block-scoped.</p>
+    
+    <h3>Example:</h3>
+    <pre>
+function example() {
+    var x = 10;
+    console.log(x); // Output: 10
+}
+example();
+console.log(x); // Throws ReferenceError: x is not defined
+    </pre>
+    
+    <h3>Reassignment & Redefinition:</h3>
+    <pre>
+var x = 10;
+console.log(x); // Output: 10
+
+x = "Mayank";
+console.log(x); // Output: Mayank
+
+var x = "Another value";
+console.log(x); // Output: Another value
+    </pre>
+    
+    <h2>Understanding <code>let</code></h2>
+    <p>The <code>let</code> keyword is block-scoped, meaning it is only accessible within the block where it is defined.</p>
+    
+    <h3>Example:</h3>
+    <pre>
+let x = 10;
+if (true) {
+    let y = 20;
+    console.log(x); // Output: 10
+    console.log(y); // Output: 20
+}
+console.log(x); // Output: 10
+console.log(y); // Throws ReferenceError: y is not defined
+    </pre>
+    
+    <h3>Reassignment & Redefinition:</h3>
+    <pre>
+let x = 10;
+console.log(x); // Output: 10
+
+x = "Mayank";
+console.log(x); // Output: Mayank
+
+let x = "Another value"; // Error: Identifier 'x' has already been declared
+    </pre>
+    
+    <h2>Understanding <code>const</code></h2>
+    <p>The <code>const</code> keyword is used to declare constants whose values cannot be reassigned after initialization.</p>
+    
+    <h3>Example:</h3>
+    <pre>
+const x = 20;
+console.log(x); // Output: 20
+
+x = 30; // Error: Assignment to constant variable.
+    </pre>
+    
+    <h3>Const with Objects & Arrays:</h3>
+    <pre>
+const person = {
+    name: 'Mayank',
+    age: 21
+};
+
+console.log(person.name); // Output: Mayank
+
+person.name = 'Love';
+console.log(person.name); // Output: Love
+
+person = {}; // Error: Assignment to constant variable.
+    </pre>
+    
+    <pre>
+const numbers = [1, 2, 3];
+console.log(numbers); // Output: [1, 2, 3]
+
+numbers.push(4);
+console.log(numbers); // Output: [1, 2, 3, 4]
+
+numbers = []; // Error: Assignment to constant variable.
+    </pre>
+    
+    <h2>Conclusion</h2>
+    <p>Welcome to JavaScript! Understanding variable declaration is crucial for mastering JavaScript and improving your programming skills.</p>
+    <p>Thanks for reading! See you in the next article.</p>`
 };
 
 function loadContent(topic) {
