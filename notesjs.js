@@ -202,7 +202,251 @@ numbers = []; // Error: Assignment to constant variable.
     
     <h2>Conclusion</h2>
     <p>Welcome to JavaScript! Understanding variable declaration is crucial for mastering JavaScript and improving your programming skills.</p>
-    <p>Thanks for reading! See you in the next article.</p>`
+    <p>Thanks for reading! See you in the next article.</p>`,
+
+    scripting_vs_programming:`
+    <h1>Variable/Function Naming Conventions</h1>
+<p>
+Variable naming is one of the most important parts of coding, yet it's often overlooked by many. While it doesn't directly impact a code's efficiency, it significantly enhances readability and code quality. Clear and meaningful variable names facilitate easier debugging and ultimately contribute to the overall improvement of code quality.
+</p>
+
+<h2>Types of Naming Conventions</h2>
+<p>
+There are numerous variable naming conventions in the coding world, but among the most important are :
+<br>
+<br>
+a) Camel Case
+<br>
+b) Pascal Case
+<br>
+c) Snake Case
+<br>
+d) Kebab Case
+</p>
+
+<h2>Camel Case</h2>
+<p>
+Camel case is a variable naming convention used almost everywhere during variable naming where words in a phrase are combined without spaces.
+<br>
+<br>
+In camel case, the first letter of each word in a phrase is capitalized except for the first word, which starts with lowercase. There are no spaces between the words.
+</p>
+
+<h2>Examples of Camel Case</h2>
+<p>
+exampleVariableName
+<br>
+myFunctionName
+<br>
+calculateTotalAmount
+</p>
+
+<h2>Pascal Case</h2>
+<p>
+Pascal case is another naming convention we use frequently to combine the words in a phrase without using spaces. It is similar to the 'Camel Case' convention just with a slight difference.
+<br>
+<br>
+In this naming convention each word in a phrase is capitalized including the first word.
+</p>
+
+<h2>Examples of Pascal Case</h2>
+<p>
+ExampleVariableName
+<br>
+MyFunctionName
+<br>
+CalculateTotalAmount
+</p>
+
+<p>
+'Pascal Case' naming convention is also known as 'Upper Camel Case'.
+</p>
+
+<h2>Snake Case</h2>
+<p>
+Another very famous variable naming convention is 'Snake Case' convention. This naming convention is most preferred in programming languages like Python.
+<br>
+<br>
+In snake case, all the words of a phrase are written in lowercase and separated by underscores ("_") instead of spaces.
+</p>
+
+<h2>Examples of Snake Case</h2>
+<p>
+example_variable_name
+<br>
+my_function_name
+<br>
+calculate_total_amount
+</p>
+
+<h2>Kebab Case</h2>
+<p>
+The kebab case is almost similar to the snake case where all the words in a phrase are written in lowercase.
+<br>
+<br>
+The only difference between snake case and kebab case naming convention is, in kebab case the words in a phrase are separated by hyphens ("-").
+</p>
+
+<h2>Examples of Kebab Case</h2>
+<p>
+example-variable-name
+<br>
+my-function-name
+<br>
+calculate-total-amount
+</p>
+
+<h2>Conclusion</h2>
+<p>
+Okay, so this was a small and concise article that we need to understand before we start coding in JavaScript. As mentioned earlier, these concepts may seem insignificant, but they are crucial for writing quality code.
+<br>
+<br>
+That's all from this article. See you in the next one. Keep learning!
+</p>
+`,
+Operators_in_JavaScript:`
+<h2>Operators in JavaScript</h2>
+<p>JavaScript is a dynamic programming language with various operators to perform operations on data and manipulate values. In this article, we'll learn the diverse types of operators in JavaScript, exploring their functionalities and providing practical examples to enhance your understanding.</p>
+
+<h2>Types of Operators</h2>
+<p>Understanding JavaScript operators is essential for writing efficient and expressive code. By mastering these operators, we'll gain the tools needed to manipulate data, make decisions, and create more dynamic and interactive applications.</p>
+
+<h2>✨ Arithmetic Operators</h2>
+<h2>📌 Assignment Operators</h2>
+<h2>✨ Comparison Operators</h2>
+<h2>📌 Logical Operators</h2>
+<h2>✨ Bitwise Operators</h2>
+<h2>📌 Ternary Operators</h2>
+
+<h2>Arithmetic Operators</h2>
+<p>Arithmetic operators in JavaScript allow us to perform mathematical calculations such as addition, subtraction, multiplication, division, and modulus.</p>
+
+<h2>Addition</h2>
+<p>Example:</p>
+<pre>
+let number1 = 25;
+let number2 = 36;
+let number3 = 56;
+
+let sum = number1 + number2 + number3;
+console.log(sum); // 117
+</pre><br>
+
+<h2>Subtraction</h2>
+<p>Example:</p>
+<pre>
+let number1 = 25;
+let number2 = 36;
+
+let diff = number1 - number2;
+console.log(diff); // -11
+</pre><br>
+
+<h2>Multiplication</h2>
+<p>Example:</p>
+<pre>
+let number1 = 25;
+let number2 = 36;
+
+let prod = number1 * number2;
+console.log(prod); // 900
+</pre><br>
+
+<h2>Exponentiation</h2>
+<p>Example:</p>
+<pre>
+let x = 5;
+let y = 5;
+
+let ans = x ** 3;
+console.log(ans); // 125
+</pre><br>
+
+<h2>Division</h2>
+<p>Example:</p>
+<pre>
+let x = 10;
+let y = 4;
+
+let ans = x / y;
+console.log(ans); // 2.5
+</pre><br>
+
+<h2>Modulus</h2>
+<p>Example:</p>
+<pre>
+let x = 10;
+let y = 4;
+
+let ans = x % y;
+console.log(ans); // 2
+</pre><br>
+
+<h2>Increment & Decrement</h2>
+<p>Example:</p>
+<pre>
+let x = 10;
+let y = 4;
+
+x++;
+console.log(x); // 11
+
+y--;
+console.log(y); // 3
+</pre><br>
+
+<h2>Assignment Operators</h2>
+<p>Example:</p>
+<pre>
+let firstName = "Mayank";
+let y = 4;
+
+console.log(firstName); // Mayank
+console.log(y); // 4
+</pre><br>
+
+<h2>Comparison Operators</h2>
+<p>Example:</p>
+<pre>
+let x = "10";
+console.log(typeof(x)); // string
+
+let y = 10;
+console.log(typeof(y)); // number
+
+console.log(x == y); // true
+console.log(x === y); // false
+</pre><br>
+
+<h2>Logical Operators</h2>
+<p>Example:</p>
+<pre>
+let alert1 = true;
+let alert2 = false;
+let alert3 = true;
+
+console.log(alert1 && alert2); // false
+console.log(alert2 && alert3); // false
+console.log(alert1 && alert3); // true
+</pre><br>
+
+<h2>Bitwise Operators</h2>
+<p>Example:</p>
+<pre>
+let num1 = 5;
+let num2 = 8;
+
+console.log(num1 | num2); // 13
+</pre><br>
+
+<h2>Ternary Operators</h2>
+<p>Example:</p>
+<pre>
+let myAge = 21;
+(myAge >= 18) ? (console.log("Can Drive")) : (console.log("Cannot Drive"));
+// Output: Can Drive
+</pre>
+`
 };
 
 function loadContent(topic) {
