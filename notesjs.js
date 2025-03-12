@@ -446,7 +446,79 @@ let myAge = 21;
 (myAge >= 18) ? (console.log("Can Drive")) : (console.log("Cannot Drive"));
 // Output: Can Drive
 </pre>
-`
+`,
+Literals: `<h1>Understanding JavaScript Literals</h1>
+ <p>In JavaScript, literals are fixed values that represent specific types of data. These literals are directly used in the code without requiring computation or evaluation.</p>
+
+    <h2>Why Are Literals Important?</h2>
+    <p>Literals are the foundation of JavaScript programming. They help define variables, objects, arrays, and expressions efficiently. Using literals correctly ensures clarity, reduces errors, and improves code readability.</p>
+
+    <h2>Types of JavaScript Literals</h2>
+    <p>JavaScript supports various types of literals, including:</p>
+<ul>
+    <li><strong>String Literals:</strong> "Hello, World!" or 'JavaScript is fun'</li>
+    <li><strong>Number Literals:</strong> 100, 3.14, -42</li>
+    <li><strong>Boolean Literals:</strong> true, false</li>
+    <li><strong>Array Literals:</strong> [1, 2, 3, 4]</li>
+    <li><strong>Object Literals:</strong> { name: "John", age: 30 }</li>
+</ul>
+
+<h2>Examples</h2>
+
+<h3>String Concatenation</h3>
+<pre>
+    let firstName = "Mayank";
+    let lastName = "Pandey";
+    let fullName = firstName + " " + lastName;
+    console.log(fullName);
+    // Output: Mayank Pandey
+</pre>
+
+<h3>Template Literals</h3>
+<pre>
+    let number1 = 10;
+    let number2 = 20;
+    let sum = number1 + number2;
+    console.log(\`The sum of \${number1} + \${number2} is equal to \${sum}\`);
+    // Output: The sum of 10 + 20 is equal to 30
+</pre>
+
+<h3>Multi-line Strings</h3>
+<pre>
+    let string1 = "Mai pal do pal ka shayar hoon";
+    let string2 = "Pal do pal meri kahani hai";
+    let multiLineString = \`
+        \${string1},
+        \${string2}\`;
+    console.log(multiLineString);
+</pre>
+
+<h3>Object Literals</h3>
+<pre>
+    let person = {
+        name: 'Mayank',
+        age: 21,
+        isRunning: true
+    };
+    console.log(person);
+</pre>
+
+<h3>Array Literals</h3>
+<pre>
+    let colors = ['orange', 'red', 'aqua', 'green', 'blue'];
+    console.log(colors);
+</pre>
+
+<h3>Mixed Type Array</h3>
+<pre>
+    let container = [2, "laptop", true, "papers", "watch"];
+    console.log(container);
+</pre>
+
+<h2>Conclusion</h2>
+<p>These are the key JavaScript literals that are commonly used in development. Understanding their syntax and usage can help avoid common mistakes.</p>`
+
+
 };
 
 function loadContent(topic) {
