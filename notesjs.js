@@ -306,20 +306,20 @@ That's all from this article. See you in the next one. Keep learning!
 `,
 Operators_in_JavaScript:`
 <h2>Operators in JavaScript</h2>
-<p>JavaScript is a dynamic programming language with various operators to perform operations on data and manipulate values. In this article, we'll learn the diverse types of operators in JavaScript, exploring their functionalities and providing practical examples to enhance your understanding.</p>
+<p>JavaScript is a dynamic programming language with various operators to perform operations on data and manipulate values. In this article, we'll learn the diverse types of operators in JavaScript, exploring their functionalities and providing practical examples to enhance your understanding.</p><br>
 
 <h2>Types of Operators</h2>
-<p>Understanding JavaScript operators is essential for writing efficient and expressive code. By mastering these operators, we'll gain the tools needed to manipulate data, make decisions, and create more dynamic and interactive applications.</p>
+<p>Understanding JavaScript operators is essential for writing efficient and expressive code. By mastering these operators, we'll gain the tools needed to manipulate data, make decisions, and create more dynamic and interactive applications.</p><br>
 
 <h2>✨ Arithmetic Operators</h2>
 <h2>📌 Assignment Operators</h2>
 <h2>✨ Comparison Operators</h2>
 <h2>📌 Logical Operators</h2>
 <h2>✨ Bitwise Operators</h2>
-<h2>📌 Ternary Operators</h2>
+<h2>📌 Ternary Operators</h2><br>
 
 <h2>Arithmetic Operators</h2>
-<p>Arithmetic operators in JavaScript allow us to perform mathematical calculations such as addition, subtraction, multiplication, division, and modulus.</p>
+<p>Arithmetic operators in JavaScript allow us to perform mathematical calculations such as addition, subtraction, multiplication, division, and modulus.</p><br>
 
 <h2>Addition</h2>
 <p>Example:</p>
@@ -431,12 +431,51 @@ console.log(alert1 && alert3); // true
 </pre><br>
 
 <h2>Bitwise Operators</h2>
-<p>Example:</p>
+<p>Example:</p><br>
+
+<h2>Bitwise AND</h2>
 <pre>
 let num1 = 5;
-let num2 = 8;
+let num2 = 3;
+console.log(num1 & num2); // 1
+</pre><br>
 
-console.log(num1 | num2); // 13
+<h2>Bitwise OR</h2>
+<pre>
+let num1 = 5;
+let num2 = 3;
+console.log(num1 | num2); // 7
+</pre><br>
+
+<h2>Bitwise XOR</h2>
+<pre>
+let num1 = 5;
+let num2 = 3;
+console.log(num1 ^ num2); // 6
+</pre><br>
+
+<h2>Bitwise NOT</h2>
+<pre>
+let num = 5;
+console.log(~num); // -6
+</pre><br>
+
+<h2>Bitwise Left Shift</h2>
+<pre>
+let num = 5;
+console.log(num << 1); // 10
+</pre><br>
+
+<h2>Bitwise Right Shift</h2>
+<pre>
+let num = 5;
+console.log(num >> 1); // 2
+</pre><br>
+
+<h2>Bitwise Zero-fill Right Shift</h2>
+<pre>
+let num = -5;
+console.log(num >>> 1); // 2147483645
 </pre><br>
 
 <h2>Ternary Operators</h2>
@@ -445,7 +484,8 @@ console.log(num1 | num2); // 13
 let myAge = 21;
 (myAge >= 18) ? (console.log("Can Drive")) : (console.log("Cannot Drive"));
 // Output: Can Drive
-</pre>
+</pre><br>
+
 `,
 Literals: `<h1>Understanding JavaScript Literals</h1>
  <p>In JavaScript, literals are fixed values that represent specific types of data. These literals are directly used in the code without requiring computation or evaluation.</p>
@@ -516,7 +556,99 @@ Literals: `<h1>Understanding JavaScript Literals</h1>
 </pre>
 
 <h2>Conclusion</h2>
-<p>These are the key JavaScript literals that are commonly used in development. Understanding their syntax and usage can help avoid common mistakes.</p>`
+<p>These are the key JavaScript literals that are commonly used in development. Understanding their syntax and usage can help avoid common mistakes.</p>`,
+If_else:`
+<h1>If-Else Statements</h1>
+<p>Conditional statements are fundamental components of programming languages, essential for handling logic and decision-making processes. They allow us to control the flow of our code by executing specific blocks of code based on certain conditions. In JavaScript, conditional statements play a crucial role in directing program execution. Let's delve into this foundational topic in JavaScript to understand its significance and explore its practical applications.</p><br>
+
+<h2>Introduction</h2>
+<p>Conditional statements in JavaScript, such as 'if' and 'if-else', allow us to control the flow of our code based on certain conditions. With these statements, we can specify blocks of code to be executed only when certain conditions are met.</p>
+<p>For example, using an if statement, we can execute a piece of code if a particular condition evaluates to true. Alternatively, with an if-else statement, we can provide an alternative code block to be executed if the condition evaluates to false. These conditional statements provide powerful tools for building dynamic and responsive programs in JavaScript.</p><br>
+
+<h2>If Statement</h2>
+<p>In JavaScript, an 'if' statement is a fundamental conditional statement that allows us to execute a block of code only if the specified condition is true. If the condition is false, the code block associated with the 'if' statement is skipped.</p><br>
+
+<h2>Syntax for if statements</h2>
+<pre>
+if (condition){
+    // Code block to be executed if the condition is true
+}
+</pre><br>
+
+<h2>Examples of if statements</h2>
+<pre>
+let speed = 87;
+
+if(speed > 90){
+    console.log("OverSpeeding");
+}
+
+if(speed > 50 && speed <=90){
+    console.log("Normal");
+}
+
+if(speed <= 50){
+    console.log("Slow");
+}
+
+// Output: "Normal"
+</pre><br>
+
+<h2>If-else Statement</h2>
+<p>In JavaScript, an 'if-else' statement is a conditional statement that allows us to execute one block of code if a specified condition evaluates to true, and another block of code if the condition evaluates to false.</p><br>
+
+<h2>Syntax for if-else statements</h2>
+<pre>
+if (condition) {
+    // Code block to be executed if condition is true
+} else {
+    // Code block to be executed if condition is false
+}
+</pre><br>
+
+<h2>Examples of if-else statements</h2>
+<pre>
+let myAge = 15;
+
+if(myAge >= 18){
+    console.log("I can Drive");
+}else{
+    console.log("Cannot Drive");
+}
+
+// Output : "Cannot Drive"
+</pre><br>
+
+<h2>If-else-if Statement</h2>
+<p>An if-else-if statement is a conditional statement that allows us to test multiple conditions and execute different blocks of code based on the outcome of those conditions. It is an extension of the if-else statement and provides additional flexibility for handling multiple scenarios.</p><br>
+
+<h2>Syntax for if-else-if statements</h2>
+<pre>
+if (condition1) {
+    // Code block to be executed if condition1 is true
+} else if (condition2) {
+    // Code block to be executed if condition2 is true
+} else {
+    // Code block to be executed if all conditions are false
+}
+</pre><br>
+
+<h2>Examples of if-else-if statements</h2>
+<pre>
+let weight = 65;
+
+if (weight > 70) {
+    console.log("You are Overweight");
+} else if (weight > 50 && weight <= 70) {
+    console.log("You are Fit");
+} else {
+    console.log("You are Underweight");
+}
+
+// Output : "You are Fit"
+</pre><br>
+
+`
 
 
 };
