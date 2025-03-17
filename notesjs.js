@@ -648,7 +648,128 @@ if (weight > 70) {
 // Output : "You are Fit"
 </pre><br>
 
-`
+`,
+Primitive_Datatypes:`
+<h1>Primitive Data Types in JavaScript</h1>
+<p>In the previous articles, we have discussed the distinction between primitive and reference data types and their significance in JavaScript. We have also examined the classification of various data types, which fall under primitive data types. Now, it's time to explore each datatype in detail, understanding its behavior and how we can efficiently utilize them in our code.</p><br>
+
+<h2>Primitive Data Types</h2>
+<p>Primitive data types are those whose size is fixed at compile time. Memory allocation for primitive data types is typically done on the 'Stack'.</p>
+<p>There are primarily five primitive data types in JavaScript:</p>
+<ul>
+    <li>Numbers</li>
+    <li>Strings</li>
+    <li>Boolean</li>
+    <li>Undefined</li>
+    <li>Null</li>
+</ul>
+<p>These primitive data types are essential for basic operations and data manipulation in programming languages. Let's briefly discuss each of these data types and their usage.</p><br>
+
+<h2>Numbers</h2>
+<p>Numbers are used to represent numeric values, which can be integers or floating-point numbers.</p>
+<p>In JavaScript, all numeric values are internally represented as double-precision 64-bit floating-point numbers. JavaScript provides methods to work with both integer and floating-point numbers.</p><br>
+
+<h2>Examples of Numbers</h2>
+<pre>
+let integerNumber = 3;
+console.log(typeof(integerNumber));    // number
+
+let floatNumber = 3.14;
+console.log(typeof(floatNumber));      // number
+
+let output = integerNumber + floatNumber;
+console.log(output);   // 6.14
+</pre><br>
+
+<h2>Arithmetic Operations</h2>
+<pre>
+let number1 = 13;
+let number2 = 10;
+
+let sum = number1 + number2;
+console.log(sum);      // 23
+
+let product = number1 * number2;
+console.log(product);  // 130
+
+let quotient = number1 / number2;
+console.log(quotient); // 1.3
+</pre><br>
+
+<h2>Strings</h2>
+<p>Strings in JavaScript represent sequences of characters. They are used to store and manipulate textual data.</p><br>
+
+<h2>Creating Strings</h2>
+<pre>
+let string1 = "Namaste";
+console.log(typeof(string1));  // string
+
+let string2 = 'Hello';
+console.log(typeof(string2));  // string
+
+let string3 = 'Welcome';
+console.log(typeof(string3));  // string
+</pre><br>
+
+<h2>Concatenating Strings</h2>
+<p>We can concatenate multiple strings using the '+' operator or template literals.</p><br>
+
+<h2>Using the '+' Operator</h2>
+<pre>
+let string1 = "Mobile";
+let string2 = "Charger";
+let finalSentence = string1 + " and " + string2 + "!";
+console.log(finalSentence);  // Output: Mobile and Charger!
+</pre><br>
+
+<h2>Using Template Literals</h2>
+<pre>
+let string1 = "Mobile";
+let string2 = "Charger";
+let finalSentence = string1 +"and"+ string2+"!";
+console.log(finalSentence);  // Output: "Mobile and Charger!"
+
+</pre><br>
+
+<h2>Boolean</h2>
+<p>The Boolean data type represents a logical value, which can be either <code>true</code> or <code>false</code>. Booleans are often used in conditional statements to control program execution.</p><br>
+
+<h2>Examples of Boolean</h2>
+<pre>
+let isSleeping = true;
+let isRunning = false;
+
+if (isSleeping) {
+    console.log("He is sleeping");
+} else {
+    console.log("He is running");
+}
+// Output: He is sleeping
+</pre><br>
+
+<h2>Undefined</h2>
+<p>In JavaScript, <code>undefined</code> represents a variable that has been declared but has not been assigned a value.</p><br>
+
+<h2>Example of Undefined</h2>
+<pre>
+let range;
+console.log(range);  // undefined
+</pre><br>
+
+<h2>Null</h2>
+<p>In JavaScript, <code>null</code> represents the intentional absence of any object value. It is used to signify that a variable does not have a value.</p><br>
+
+<h2>Example of Null</h2>
+<pre>
+let range = null;
+console.log(range);         // null
+console.log(typeof(range)); // object
+</pre><br>
+
+<h2>Conclusion</h2>
+<p>By now, you should have a solid understanding of the primitive data types in JavaScript and how they are used. These data types form the foundation of data manipulation in JavaScript programming.</p><br>
+
+`,
 
 
 };
