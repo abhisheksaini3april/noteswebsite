@@ -770,6 +770,329 @@ console.log(typeof(range)); // object
 <p>By now, you should have a solid understanding of the primitive data types in JavaScript and how they are used. These data types form the foundation of data manipulation in JavaScript programming.</p><br>
 
 `,
+Reference_Datatypes:`
+<h1>Reference Data Types in JavaScript</h1>
+<p>Do you know how crucial it is to understand reference data types perfectly in JavaScript? You can imagine its importance when I say that 90% of the time in development, we use these data types in one form or another. These data types are the pillars of development. So, tighten your seat belts, we're diving into one of the most vital concepts of JavaScript. From here, our real development journey begins.</p>
+
+<h2>Introduction</h2>
+<p>We know that reference data types are dynamic in nature and do not have a fixed size in memory. Before delving into each specific data type, let's provide a brief overview of all the data types classified as reference data types:</p>
+
+<p>The following data types are classified as reference data types:</p>
+<ul>
+    <li>Objects</li>
+    <li>Arrays</li>
+    <li>Functions</li>
+</ul>
+
+<h2>Objects</h2>
+<p>Objects are one of the most important data types as we'll be using them everywhere we have to deal with data. Objects store the data in the form of key-value pairs where keys are strings (or Symbols) and values can be of any data type, including other objects, functions, arrays, etc.</p>
+
+<h3>Example:</h3>
+<pre>
+let person = {
+    name: "Mayank",
+    age: 21,
+    country: "India"
+};
+
+console.log(person.name);      // Mayank
+console.log(person.age);       // 21
+console.log(person.city);      // India
+</pre>
+
+<h3>Accessing the properties:</h3>
+<pre>
+let person = {
+    name: "Mayank",
+    age: 21,
+    country: "India"
+};
+
+//Dot Notation
+console.log(person.name);      // Mayank
+
+//Bracket Notation
+console.log(person['name']);   // Mayank
+</pre>
+
+<h3>Changing properties of object:</h3>
+<pre>
+let person = {
+    name: "Mayank",
+    age: 21,
+    country: "India"
+};
+
+// Adding a property
+person.isSleeping = false;
+
+// Modifying a property
+person.age = 22;
+
+// Deleting a property
+delete person.country;
+
+console.log(person);
+// Output : { name: 'Mayank', age: 22, isSleeping: false }
+</pre>
+
+<h3>Functions in objects:</h3>
+<pre>
+let person = {
+    name: "Mayank",
+    age: 21,
+    country : "India",
+    message: function() {
+        console.log("Hello, my name is " + this.name);
+    }
+};
+
+person.message(); 
+// Output: Hello, my name is Mayank
+</pre>
+
+<h2>Arrays</h2>
+<p>Arrays in JavaScript are a collection of items of the same or different data types at contiguous memory locations. Arrays are special types of objects that store collections of data.</p>
+
+<h3>Example:</h3>
+<pre>
+let fruits = ["Apple", "Banana", "Orange"];
+let primeNumbers = [3, 5, 7, 11, 13];
+let data = [true, 'ab', "great", 34];
+</pre>
+
+<h3>Accessing the items in an array:</h3>
+<pre>
+let fruits = ["Apple", "Banana", "Orange"];
+let fruit2 = fruits[1];
+console.log(fruit2); // Banana
+</pre>
+
+<h3>Adding items in an array:</h3>
+<pre>
+let fruits = ["Apple", "Banana", "Orange"];
+
+fruits.push("Kiwi");
+fruits.unshift("Grapes");
+
+console.log(fruits);
+// Output : [ 'Grapes', 'Apple', 'Banana', 'Orange', 'Kiwi' ]
+</pre>
+
+<h3>Deleting items in an array:</h3>
+<pre>
+let fruits = ["Apple", "Banana", "Orange"];
+
+fruits.pop();
+fruits.shift();
+
+console.log(fruits);
+// Output : [ 'Banana' ]
+</pre>
+
+<h2>Functions</h2>
+<p>In JavaScript, functions are a fundamental building block of the language. Functions are reusable pieces of code that can be called and executed at any point in our program.</p>
+
+<h3>Initializing a function:</h3>
+<pre>
+function sum(x, y){
+    let result = x + y;
+    return result;
+}
+
+let output = sum(3, 8);
+console.log(output); // 11
+</pre>
+
+<h3>Anonymous functions in JavaScript</h3>
+<p>JavaScript also supports anonymous functions, which are functions without a name. They are assigned to variables or passed as arguments to other functions.</p>
+
+<h3>Assignment to a variable:</h3>
+<pre>
+var add = function(x, y) {
+  return x + y;
+};
+</pre>
+
+<h3>Anonymous functions as callback functions:</h3>
+<pre>
+setTimeout(function() {
+  console.log('This is an anonymous function called after 1 second.');
+}, 1000);
+</pre>
+
+<h2>Conclusion</h2>
+<p>That's it for this article. It was just an overview of reference data types that I wanted to share before delving deeper into each data type and exploring everything about them individually.</p>
+<p>Stay tuned for the next installment as we plunge into the depths of function mastery. The adventure has just begun!</p>
+
+`,
+Arrays:`
+<h2>Arrays in JavaScript</h2>
+<p>Arrays are fundamental data structures in JavaScript that allow you to store and manipulate collections of data. Whether you're a beginner or an experienced developer, understanding arrays is crucial for mastering JavaScript programming. In this article, we'll explore the basics of arrays, their manipulation, common operations, and some useful methods provided by JavaScript for working with arrays.</p>
+
+<h2>What is an Array?</h2>
+<p>An array in JavaScript is a special type of object that stores a collection of elements. These elements can be of any data type, including numbers, strings, objects, or even other arrays. Arrays in JavaScript are dynamic, meaning they can grow or shrink in size dynamically as elements are added or removed.</p>
+
+<h2>Creating Arrays</h2>
+<p>In JavaScript, we can create an array using:</p>
+<ul>
+  <li>Array Literal Notation '[]'</li>
+  <li>Array Constructor</li>
+</ul>
+
+<h3>Array Literal Notation</h3>
+<p>In JavaScript, we can create arrays using array literal notation, which involves enclosing a comma-separated list of elements within square brackets '[]'.</p>
+<pre>
+<code>
+// Creating an array of numbers using array literal notation
+const numbers = [1, 2, 3, 4, 5];
+
+// Creating an array of strings using array literal notation
+const fruits = ['apple', 'banana', 'orange'];
+
+// Creating an array of mixed data types using array literal notation
+const mixed = [1, 'apple', true, { name: 'John' }];
+</code>
+</pre>
+
+<h3>Array Constructor</h3>
+<p>In JavaScript, we can also create arrays using the Array constructor. The Array constructor can be called with or without the new keyword.</p>
+<pre>
+<code>
+// Creating an array of numbers using Array constructor
+const numbers = new Array(1, 2, 3, 4, 5);
+
+// Creating an array of strings using Array constructor
+const fruits = new Array('apple', 'banana', 'orange');
+
+// Creating an empty array using Array constructor
+const emptyArray = new Array();
+
+console.log(numbers); // Output: [1, 2, 3, 4, 5]
+console.log(fruits); // Output: ['apple', 'banana', 'orange']
+console.log(emptyArray); // Output: []
+</code>
+</pre>
+
+<h2>Accessing Array Elements</h2>
+<p>In JavaScript, we can access array elements using square brackets notation '[]'.</p>
+<pre>
+<code>
+const fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi'];
+
+console.log(fruits[0]); // apple
+console.log(fruits[2]); // orange
+console.log(fruits[fruits.length - 1]); // kiwi
+
+const index = 1;
+console.log(fruits[index]); // banana
+</code>
+</pre>
+
+<h2>Insertion in Array</h2>
+<h3>Insertion at End</h3>
+<p>We can insert an item at the end of an array using the push method.</p>
+<pre>
+<code>
+const fruits = ['apple', 'banana', 'orange'];
+
+fruits.push('kiwi');
+fruits.push('grapes');
+
+console.log(fruits); 
+// Output: ['apple', 'banana', 'orange', 'kiwi', 'grapes']
+</code>
+</pre>
+
+<h3>Insertion at Start</h3>
+<p>We can insert an item at the start of an array using the unshift method.</p>
+<pre>
+<code>
+const fruits = ['apple', 'banana', 'orange'];
+
+fruits.unshift('kiwi');
+fruits.unshift('grapes');
+
+console.log(fruits); 
+// Output: ['grapes', 'kiwi', 'apple', 'banana', 'orange']
+</code>
+</pre>
+
+<h3>Insertion at Random Index</h3>
+<p>To add an element at a random index inside an array we use the splice method.</p>
+<pre>
+<code>
+const fruits = ['apple', 'orange'];
+
+// Inserting 'banana' at index 1
+fruits.splice(1, 0, 'banana');
+console.log(fruits); // Output: ['apple', 'banana', 'orange']
+</code>
+</pre>
+
+<h2>Filter Method on Arrays</h2>
+<p>In JavaScript, the filter() method is used to create a new array with all elements that satisfy the specific condition in the provided callback function.</p>
+<pre>
+<code>
+const numbers = [-1, 0, -20, 45, 3, 74, -5, 6];
+
+// Filtering positive numbers
+const positiveNumbers = numbers.filter(function(number) {
+  return number > 0;
+});
+
+console.log(positiveNumbers); // Output: [45, 3, 74, 6]
+</code>
+</pre>
+
+<h3>Filter Method on Array of Objects</h3>
+<pre>
+<code>
+const products = [
+    { id: 1, name: "Product A", price: 10 },
+    { id: 2, name: "Product B", price: 20 },
+    { id: 3, name: "Product C", price: 30 },
+];
+
+const expensiveProducts = products.filter((product) => product.price > 15);
+
+console.log(expensiveProducts);
+/* Output : 
+[
+  { id: 2, name: 'Product B', price: 20 },
+  { id: 3, name: 'Product C', price: 30 }
+]
+*/
+</code>
+</pre>
+
+<h3>Another Example</h3>
+<pre>
+<code>
+const words = ["apple", "banana", "orange", "grapefruit"];
+
+const longWords = words.filter((word) => word.length > 6);
+
+console.log(longWords); // Output: ["banana", "grapefruit"]
+</code>
+</pre>
+
+<h2>Reduce Method on Arrays</h2>
+<p>In JavaScript, the reduce() method is used to reduce an array to a single value.</p>
+<pre>
+<code>
+const numbers = [1, 2, 3, 4, 5];
+
+const sum = numbers.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+}, 0);
+
+console.log(sum);
+// Output: 15
+</code>
+</pre>
+
+`,
 
 
 };
